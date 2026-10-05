@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "codex-cu": {
-      "command": "node",
-      "args": ["${CLAUDE_PLUGIN_ROOT}/proxy.mjs"]
-    }
-  }
-}

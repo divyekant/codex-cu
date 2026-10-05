@@ -24,7 +24,7 @@ Start a new Claude Code session. The tools show as `mcp__plugin_codex-cu_codex-c
 
 | Part | File | Function |
 |---|---|---|
-| MCP server `codex-cu` | `.mcp.json`, `proxy.mjs` | Starts `cua_repl` from the newest version in `~/.codex/plugins/cache/openai-bundled/unified-computer-use/`. Adds `_meta["x-codex-turn-metadata"]` to each `tools/call`. Shows only the tools that Codex enables, and hides `turn_ended`. |
+| MCP server `codex-cu` | `.claude-plugin/plugin.json`, `proxy.mjs` | Starts `cua_repl` from the newest version in `~/.codex/plugins/cache/openai-bundled/unified-computer-use/`. Adds `_meta["x-codex-turn-metadata"]` to each `tools/call`. Shows only the tools that Codex enables, and hides `turn_ended`. |
 | Stop hook | `hooks/hooks.json` | Runs `proxy.mjs --turn-ended`. The proxy of the same Claude session calls `turn_ended` and makes a new `turn_id`. Codex then releases the tabs of that turn. |
 
 The browser side of `cua_repl` rejects a call that has no `session_id` and `turn_id` in the turn metadata. The proxy sends `CLAUDE_CODE_SESSION_ID` as `session_id`, and a new UUID as `turn_id` for each turn.
