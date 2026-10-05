@@ -10,15 +10,19 @@ A Claude Code plugin that gives Claude the computer-use runtime of the Codex app
 
 ## Install
 
+Install from [dk-marketplace](https://github.com/divyekant/dk-marketplace):
+
 ```bash
-claude plugin marketplace add ~/projects/codex-cu
+claude plugin marketplace add divyekant/dk-marketplace
 ```
 
 ```bash
-claude plugin install codex-cu@codex-cu
+claude plugin install codex-cu@dk-marketplace
 ```
 
 Start a new Claude Code session. The tools show as `mcp__plugin_codex-cu_codex-cu__js` and `mcp__plugin_codex-cu_codex-cu__js_reset`.
+
+To work on the plugin from a local clone, start Claude Code with `claude --plugin-dir <path to clone>`.
 
 ## How it works
 
