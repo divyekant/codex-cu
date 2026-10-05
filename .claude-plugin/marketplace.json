@@ -1,0 +1,16 @@
+{
+  "name": "codex-cu",
+  "owner": {
+    "name": "Divyekant"
+  },
+  "metadata": {
+    "description": "Local marketplace for the codex-cu plugin."
+  },
+  "plugins": [
+    {
+      "name": "codex-cu",
+      "source": "./",
+      "description": "Use Codex's computer-use runtime (Chrome extension, in-app browser, macOS apps) from Claude Code."
+    }
+  ]
+}

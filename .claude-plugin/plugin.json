@@ -1,0 +1,7 @@
+{
+  "name": "codex-cu",
+  "version": "0.1.0",
+  "description": "Use Codex's computer-use runtime (Chrome extension, in-app browser, macOS apps) from Claude Code.",
+  "author": { "name": "Divyekant" },
+  "license": "MIT"
+}
